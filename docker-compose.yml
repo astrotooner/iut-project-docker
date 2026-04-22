@@ -2,6 +2,8 @@ services:
   app:
     build: .
     ports:
-      - "8080:8080"
+      - "80:8080"
+    environment:
+      APP_USER: "There"
   redis:
     image: "redis:8"
